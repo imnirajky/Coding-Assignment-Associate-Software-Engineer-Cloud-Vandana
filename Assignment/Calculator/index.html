@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div>
+        <div style="width: 400px; height: 50px; display: flex;">
+            <div style="width: 80%; height: 50px; display: flex; align-items: center; justify-content: flex-end; border: 1px grey solid">
+                <input type="text" id="display" style="border: none; background: transparent; text-align: right; width: 100%;" disabled>
+            </div>
+            <div style="width: 20%; height: 50px; background-color: skyblue; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; cursor: pointer;" onclick="clearDisplay()">AC
+            </div>
+        </div>
+        <div style="width: 400px; height: 200px; display: flex; background-color: #333; color: white;">
+            <div style="width: 80%; height: 200px; display: flex; flex-direction: column;">
+                <div style="width: 100%; display: flex; height: 50px;">
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('7')">7</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('8')">8</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('9')">9</div>
+                </div>
+                <div style="width: 100%; display: flex; height: 50px;">
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('4')">4</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('5')">5</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('6')">6</div>
+                </div>
+                <div style="width: 100%; display: flex; height: 50px;">
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('1')">1</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('2')">2</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('3')">3</div>
+                </div>
+                <div style="width: 100%; display: flex; height: 50px;">
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('.')">.</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="appendToDisplay('0')">0</div>
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="calculateResult()">=</div>
+                </div>
+            </div>
+            <div style="width: 20%; height: 200px; display: flex; flex-direction: column; background-color: grey; color: white;">
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer;" onclick="appendToDisplay('+')">+</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer;" onclick="appendToDisplay('-')">-</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer;" onclick="appendToDisplay('*')">×</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer;" onclick="appendToDisplay('/')">÷</div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
